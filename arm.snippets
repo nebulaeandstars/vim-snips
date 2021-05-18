@@ -20,11 +20,9 @@ $1:
 
 	${4:@ TODO:}
 
-	bx lr
 	ldmia sp!, {fp, lr}
+	bx lr
 .size $1, .-$1
-
-
 endsnippet
 
 
@@ -34,7 +32,6 @@ $1
 .rept ${2:1000}
 .byte 0
 .endr
-
 endsnippet
 
 
