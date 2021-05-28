@@ -3,7 +3,6 @@ snippet section "section divider" b
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 @ $1
 
-
 endsnippet
 
 
@@ -40,47 +39,39 @@ endsnippet
 # ldmia sp!, { ... }
 snippet ldmia "ldmia sp!, { ... }" b
 ldmia sp!, {${1:fp, lr}}
-
 endsnippet
 
 # stmdb sp!, { ... }
 snippet stmdb "stmdb sp!, { ... }" b
 stmdb sp!, {${1:fp, lr}}
-
 endsnippet
 
 # ldmdb sp!, { ... }
 snippet ldmdb "ldmdb sp!, { ... }" b
 ldmdb sp!, {$1}
-
 endsnippet
 
 # stmia sp!, { ... }
 snippet stmia "stmia sp!, { ... }" b
 stmia sp!, {${1}
-
 endsnippet
 
 # push { ... }
 snippet push "push { ... }" bA
 push {${1}}
-
 endsnippet
 
 # pop { ... }
 snippet pop "pop { ... }" bA
 pop {${1}}
-
 endsnippet
 
 # ldr $1, [$2]
-snippet ldr "ldr $1, [$2]" bA
+snippet ldr "ldr $1, [$2]" b
 ldr $1, [$2]
-
 endsnippet
 
 # str $1, [$2]
-snippet str "str $1, [$2]" bA
+snippet str "str $1, [$2]" b
 str $1, [$2]
-
 endsnippet
